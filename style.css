@@ -98,13 +98,13 @@ body{
     background: #d8dfe8;
 }
 
-#copiar{
+#copiar-resultado{
     margin-left: 33%;
     margin-top: 10%;
     padding: 24px;
     width: 40%;
     height: 10%;
-    background: #d8dfe8;
-    display: none;
+    background: #0A3871;
+    
     border-radius: 24px;
 }

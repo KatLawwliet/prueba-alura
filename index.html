@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="clipboard.js-master/dist/clipboard.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <title>Challenge 1</title>
 </head>
@@ -26,14 +27,16 @@
             <img src="image/muneco.png" alt="right"  id="img-right">
             <h1 id="texto"> Ningun mensaje fue encontrado</h1>
             <textarea id="texto2" name="name"  cols="80" rows="8">Ingresa el mensaje que desees encriptar o desencriptar.</textarea>
-            <button id="copiar" type="button" name="button">Copiar!</button>
+            <button id="copiar-resultado" type="button" name="button" onclick="copiarResultado()">Copiar!</button>
         </div>
 
         <div class="left-button">
             <p>Solo minusculas y sin acento</p>
-            <button type="button" id="btn-encriptar">Encriptar</button>
-            <button type="button" id="btn-desencriptar" >Desencriptar</button>
+            <p id="status"></p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()" >Desencriptar</button>
         </div>
+        
     </div>
 </body>
 </html>
