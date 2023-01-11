@@ -60,11 +60,11 @@ body{
     height: auto;
 }
 
-#texto2{
+#texto-salida{
     margin-left: 7%;
     margin-right: 5%;
 }
-#texto2{
+#texto-salida{
     float: left;
     margin-left: 10%;
     color: #0A3871;

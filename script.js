@@ -10,9 +10,9 @@ const encryptionKey = {
   
   // Funcion para encriptar el texto
   function encriptar() {
-      let inputText = document.getElementById("inputTexto").value;  
+      let inputText = document.getElementById("texto-entrada").value;  
       inputText = inputText.split('').map(c => encryptionKey[c] || c).join('');  
-      document.getElementById("texto2").value = inputText;  
+      document.getElementById("texto-salida").value = inputText;  
         // Let: permite declarar variables limitando su alcance (scope) al bloque, declaración, o expresión donde se está usando.
         // split: El método split() divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas. 
         // join: une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena.
@@ -22,17 +22,17 @@ const encryptionKey = {
   
   // Funcion para desencriptar el texto
   function desencriptar() {
-      let inputText = document.getElementById("inputTexto").value;
+      let inputText = document.getElementById("texto-entrada").value;
       for (let key in encryptionKey) {
           inputText = inputText.split(encryptionKey[key]).join(key);
       }
-      document.getElementById("texto2").value = inputText;
+      document.getElementById("texto-salida").value = inputText;
 
   }
  
   //Funcion para copiar el texto usando libreria clipboard
   function copiarResultado() {
-    var text = document.getElementById("texto2").value;
+    var text = document.getElementById("texto-salida").value;
     var clipboard = new ClipboardJS("#copiar-resultado", {
         text: function() {
             return text;
@@ -47,8 +47,7 @@ const encryptionKey = {
     document.getElementById("copiar-resultado").onclick = function(){
         copiarResultado();
     }
-    
-    document.getElementById("texto").hidden = true;
+    document.getElementById("texto-mensaje-vacio").hidden = true;
 }
 
 
