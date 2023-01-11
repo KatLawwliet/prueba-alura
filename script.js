@@ -47,7 +47,7 @@ const encryptionKey = {
     document.getElementById("copiar-resultado").onclick = function(){
         copiarResultado();
     }
-    document.getElementById("texto-mensaje-vacio").hidden = true;
+    document.getElementById("texto-mensaje-vacio").display = "none";
 }
 
 
