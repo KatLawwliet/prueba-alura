@@ -1,6 +1,7 @@
 #Challenge-Oracle-One
 
-Encriptador de mensajes
+Encriptador de mensajes:
+
 Este proyecto es un encriptador de mensajes en JavaScript que permite encriptar y desencriptar texto.
 
 #Funcionamiento
